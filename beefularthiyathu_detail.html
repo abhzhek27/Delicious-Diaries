@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beef Ularthiyathu Recipe</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      background-image: url('264pIkbEsTpFq.jpg');
+      filter: grayscale(50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      background-image: url(1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(75%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ffcc80;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">BEEF ULARTHIYATHU   </div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>INTRO</span></a>
+    <a href="#section2">02 <span>SPICES REQUIRED</span></a>
+    <a href="#section3">03 <span>START COOKING</span></a>
+  </div>  
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>THE PRIDE OF KERALA</h2>
+      <p>Beef Ularthiyathu — the slow-roasted, spice-rich delicacy of Kerala — is more than just a dish. With crispy coconut slices, caramelized onions, and bold black pepper, it’s a celebration of tradition, flavor, and festive joy in every bite.</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>THE SPICES</h2>
+      <p style="color: rgb(255, 255, 255);">
+        1 tsp turmeric, 2 tsp red chili powder, 1 tsp black pepper, 1 tsp coriander powder, 1 tsp garam masala, 1 tbsp ginger-garlic paste, 1 tsp fennel seeds, 2 cinnamon sticks, 4 cloves, 2 cardamoms, fresh curry leaves, 2 onions sliced, 1/2 cup coconut bits, salt to taste, and coconut oil for roasting.
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Cooking Steps</h2>
+
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Marinate beef with turmeric, chili powder, coriander, salt, and ginger-garlic paste. Pressure cook with a little water until tender. Reserve the stock.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Heat coconut oil in a thick-bottomed pan. Add coconut bits and fry until golden. Remove and keep aside.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>In the same oil, sauté whole spices and curry leaves. Add onions and cook till browned and caramelized.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4</h3>
+        <p>Add cooked beef along with some reserved stock. Stir and roast on low heat, stirring frequently, until the gravy thickens and coats the meat.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 5</h3>
+        <p>Finish with pepper, garam masala, fried coconut bits, and more curry leaves. Serve hot with Kerala parotta, rice, or tapioca.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

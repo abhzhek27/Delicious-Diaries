@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tribute Layout</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      background-image: url('264pIkbEsTpFq.jpg');
+      filter: grayscale(50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      background-image: url(1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(75%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ffcc80;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">BIRYANI</div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>INTRO</span></a>
+    <a href="#section2">02 <span>SPICES REQUIRED</span></a>
+    <a href="#section3">03 <span>START COOKING</span></a>
+  </div>  
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>A LEGENDARY TASTE</h2>
+      <p>For 499 years, the aroma of Biryani has travelled through royal kitchens, bustling streets, and warm homes — a timeless dish that tells a story in every grain.</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>THE SPICES</h2>
+      <p style="color: rgb(255, 255, 255);">
+        2 bay leaves, 1–2 cinnamon sticks, 4–5 cloves, 3 green cardamoms, 1 black cardamom, 1 star anise, 1 tsp cumin seeds, 6–8 black peppercorns, small mace, pinch of stone flower (kalpasi), 1 tsp turmeric, 1.5 tsp red chili, 2 tsp coriander, 1.5 tsp garam masala, 2 tbsp ghee, fried onions, fresh mint & coriander, lemon juice, rose/kewra water.
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Cooking Steps</h2>
+
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Soak basmati rice in water for 30 minutes. Meanwhile, marinate chicken with yogurt, ginger-garlic paste, turmeric, red chili powder, garam masala, and salt. Let it rest for at least 1 hour.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Heat ghee and oil in a pan. Sauté sliced onions until golden brown. Add whole spices like bay leaf, cardamom, cloves, and cinnamon. Stir in the marinated chicken and cook until oil separates.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Boil soaked rice with salt and a few drops of lemon juice until it's 70% cooked. Drain and set aside. Layer the partially cooked rice over the chicken, adding fried onions, saffron milk, mint, and coriander leaves.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4</h3>
+        <p>Cover the pot with a tight lid or dough seal. Cook on a low flame (dum) for 25–30 minutes. Let it rest for 10 minutes before opening. Serve hot with raita or salan.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

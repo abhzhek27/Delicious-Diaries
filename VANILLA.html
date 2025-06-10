@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vanilla Sponge Icecream Tribute</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url(VANILLA_1.jpg) no-repeat center center/cover;
+      filter: grayscale(10%) brightness(0.6);
+      z-index: -2;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      color: white;
+    }
+
+    .menu {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 2;
+    }
+
+    .center-content h3 {
+      font-weight: 300;
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .center-content h1 {
+      font-size: 68px;
+      letter-spacing: 10px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .center-content .btn {
+      padding: 14px 36px;
+      font-size: 14px;
+      background: white;
+      color: #f5a623;
+      border: none;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
+
+    .btn:hover {
+      background-color: #f5a623;
+      color: white;
+    }
+
+    .nav-dots {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+    }
+
+    .nav-dots div {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-dots .active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <header>
+      <div class="menu"><a href="2nd.html" style="color: #fff; text-decoration: none;">☰ Menu</a></div>
+    </header>
+
+    <div class="center-content">
+      <h3>LIGHT & FLUFFY</h3>
+      <h1>VANILLA ICECREAM</h1>
+      <a href="vanilla_1.html" class="btn">Discover Now</a>
+    </div>
+
+    <div class="nav-dots">
+      <div class="active"></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+</body>
+</html>

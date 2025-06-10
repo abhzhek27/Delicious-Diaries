@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Diaries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background-color: #FC8019;
+      color: white;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-list li {
+      cursor: pointer;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-list li:hover {
+      color: #ffe7e7;
+    }
+
+    .sec {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('background.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-sec h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-sec p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .recipes {
+      padding: 60px 20px;
+      background-color: #fdfdfd;
+      text-align: center;
+    }
+
+    .recipes h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+  .recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+    .recipe-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .recipe-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .recipe-card h2 {
+      font-size: 1.4rem;
+      margin: 15px 0 10px;
+      padding: 0 15px;
+    }
+
+    .recipe-card p {
+      font-size: 1rem;
+      padding: 0 15px 15px;
+      color: #666;
+    }
+
+    .recipe-card a {
+      display: inline-block;
+      margin: 15px 0 20px;
+      padding: 10px 20px;
+      background-color: #FC8019;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .recipe-card a:hover {
+      background-color: #e26710;
+    }
+
+    .row-break {
+      grid-column: 1 / -1;
+      height: 0;
+    }
+
+    @media(max-width: 600px) {
+      .hero-sec h2 {
+        font-size: 2rem;
+      }
+
+      .hero-sec p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Delicious Diaries</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a style="text-decoration: none; color: #fff;"href="doom.html">Invoke Ai for Cooking</a></li>
+          <li><a style="text-decoration: none; color: #fff;"href="index.html">Home</a></li>
+          <li><a style="text-decoration: none; color: #fff;"href="#"3>About</a></li>
+          <li><a style="text-decoration: none; color: #fff;" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="sec">
+    <div class="hero-sec">
+      <h2>Welcome to our Recipe Collections!</h2>
+      <p>Prepare your favorite mouth-watering dishes with help from our culinary journey diaries.</p>
+    </div>
+  </section>
+
+  <section class="recipes">
+    <h1>Featured Recipes</h1>
+    <div class="recipe-grid">
+      <!-- Chicken Recipes -->
+      <div class="recipe-card">
+        <img src="Chicken-Biryani.jpg" alt="Chicken Biryani">
+        <h2>Chicken Biryani</h2>
+        <p>A luxurious delight, spiced to perfection and loved around the world.</p>
+        <a href="cb.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="chickenroast.jpg" alt="Kerala Chicken Roast">
+        <h2>Kerala Chicken Roast</h2>
+        <p>Crisp and fiery — the pride of ‘God’s Own Country.<br><br></p>
+        <a href="kerala_roast.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="chickencurry.jpg" alt="Chicken Curry">
+        <h2>Chicken Curry</h2>
+        <p>A comforting classic, cooked in rich, aromatic gravy.</p>
+        <a href="chickencurry.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="chicken65.jpg" alt="Chicken 65">
+        <h2>Chicken 65</h2>
+        <p>Crispy, spicy, and iconic — a southern favorite!</p>
+        <a href="chicken65.html">View Recipe</a>
+      </div>
+
+      <!-- Row Break -->
+      <div class="row-break"></div>
+
+      <!-- Beef Recipes -->
+      <div class="recipe-card">
+        <img src="beef biriyani.jpg" alt="Beef Biriyani">
+        <h2>Beef Biriyani</h2>
+        <p>An Indian one pot meal cooked in spicy masala gravy and layered with cooked rice.</p>
+        <a href="beefbiriyani.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="beeffry.jpg" alt="Beef Fry">
+        <h2>Beef Fry</h2>
+        <p>It's a spicy, slow-roasted dish that pairs perfectly with Kerala porotta.</p>
+        <a href="beeffry.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="beefcurry.jpg" alt="Beef Curry">
+        <h2>Beef Curry</h2>
+        <p>An authentic and flavorful beef curry recipe, very adaptable & versatile!</p>
+        <a href="beefcurry.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="beefularthiyathu.jpg" alt="Beef Ularthiyathu">
+        <h2>Beef Ularthiyathu</h2>
+        <p>Beef Ularthiyathu is a traditional Kerala style beef roast.<br><br></p>
+        <a href="beefularthiyathu.html">View Recipe</a>
+      </div>
+      <div class="row-break"></div>
+            <div class="recipe-card">
+                <img src="chocolatecake.jpg" alt="chocolate cake">
+                <h2>Chocolate Cake</h2>
+                <p>A rich and moist chocolate treat perfect for any occasion.</p>
+                <a href="chocolatecake.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="vanillacake.jpg" alt="vanilla sponge cake">
+                <h2>Vanilla Sponge Cake</h2>
+                <p>Light and fluffy cake with a classic vanilla flavor.</p>
+                <a href="vanillacake.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="redvelvetcake.jpg" alt="red velvet cake">
+                <h2>Red Velvet Cake</h2>
+                <p>Soft, red-colored cake with a creamy frosting.<br><br></p>
+                <a href="redvelvet.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="carrotcake.jpg" alt="carrot cake">
+                <h2>Carrot Cake</h2>
+                <p>A spiced cake with grated carrots, often topped with cream cheese frosting.</p>
+                <a href="carrotcake.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="lime_1.jpg" alt="Lime Juice">
+                <h2>Lime Juice</h2>
+                <p>It's a tangy and refreshing beverage made from freshly squeezed limes</p>
+                <a href="LIME.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="melon_1.jpg" alt=" Juice">
+                <h2>Watermelon Juice</h2>
+                <p>This easy watermelon juice recipe is perfect for hot summer days</p>
+                <a href="MELON.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="grape_1.avif" alt="Grape Juice">
+                <h2>Grape Juice</h2>
+                <p>Grape juice is obtained from crushing and blending grapes into a liquid</p>
+                <a href="GRAPE.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="ORANGE_1.jpg" alt="Orange Juice">
+                <h2>Orange Juice</h2>
+                <p>Orange juice is a liquid produced by squeezing or reaming oranges.</p>
+                <a href="ORANGE.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="CHOCOLATE_1.jpg" alt="choco icecream">
+                <h2>Chocolate icecream</h2>
+                <p>Try everyone's favourite Chocolate icecream</p>
+                <a href="CHOCOLATE.html">View Recipe</a>
+            </div>
+             <div class="recipe-card">
+                <img src="STRAWBERRY_1.jpg" alt="strawberry icecream">
+                <h2>Strawberry icecream</h2>
+                <p>Try a refreshing scoop of homemade Strawberry Ice Cream</p>
+                <a href="STRAWBERRY.html">View Recipe</a>
+            </div>
+             <div class="recipe-card">
+                <img src="VANILLA_1.jpg" alt="vannila icecream">
+                <h2>Vanilla icecream</h2>
+                <p>Prepared with thickened cream, condensed milk and vanilla essence. </p>
+                <a href="VANILLA.html">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="BUTTERSCOTCH_1.jpg" alt="butterscotch icecream">
+                <h2>Butterscotch icecream</h2>
+                <p>It's known for its creamy taste, flavor and crunchy butterscotch crystals</p>
+                <a href="BUTTERSCOTCH.html">View Recipe</a>
+            </div>
+    </div>
+  </section>
+
+</body>
+</html>

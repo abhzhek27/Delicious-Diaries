@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vanilla Ice Cream</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      /* Consider updating the background image to a vanilla-themed one, e.g., vanilla beans, or a creamy texture */
+      background-image: url('ICE.webp'); /* Placeholder: replace with your image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(30%);
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      /* Consider updating the background image to a vanilla-themed one, e.g., custard or ice cream churning */
+      background-image: url('vanilla_prep.jpg'); /* Placeholder: replace with your image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(50%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ff99aa; /* Keeping this pinkish tone for consistency, but a creamier tone like #FFFDD0 or #F3E5AB could also work for vanilla */
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">VANILLA</div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>INTRO</span></a>
+    <a href="#section2">02 <span>INGREDIENTS</span></a>
+    <a href="#section3">03 <span>MAKING STEPS</span></a>
+  </div>    
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>Pure, Classic, and Utterly Delicious</h2>
+      <p>Vanilla ice cream is the quintessential frozen dessert, celebrated for its rich, creamy texture and comforting, aromatic vanilla flavor. It's perfect on its own or as a versatile base for countless other treats.</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>INGREDIENTS REQUIRED</h2>
+      <p style="color: rgb(255, 255, 255);">
+        Heavy Cream (or Double Cream) – 2 cups<br>
+        Whole Milk – 1 cup<br>
+        Granulated Sugar – ¾ cup<br>
+        Large Egg Yolks – 4 (for a rich, custard base)<br>
+        Pure Vanilla Extract – 2 teaspoons (or 1 vanilla bean, split and scraped)<br>
+        Pinch of Salt<br>
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Making Steps</h2>
+
+      <div class="step">
+        <h3>Step 1: Prepare the Custard Base</h3>
+        <p>In a medium saucepan, combine the heavy cream, whole milk, half of the granulated sugar, and a pinch of salt. Heat over medium heat until the mixture is hot and steamy, but not boiling. In a separate bowl, whisk the egg yolks with the remaining sugar until light and creamy. Gradually whisk about half of the hot cream mixture into the egg yolks to temper them, then pour the tempered egg mixture back into the saucepan with the remaining cream. Continue to cook over medium-low heat, stirring constantly, until the custard thickens enough to coat the back of a spoon (do not boil).</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Add Vanilla and Chill</h3>
+        <p>Remove the custard from the heat and stir in the pure vanilla extract. If using a vanilla bean, remove it after the custard is cooked. For a smoother texture, strain the custard through a fine-mesh sieve into a clean bowl. Cover the surface of the custard with plastic wrap (to prevent a skin from forming) and refrigerate until thoroughly chilled, at least 4 hours or preferably overnight.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Churn the Ice Cream</h3>
+        <p>Once the base is completely chilled, pour it into your ice cream maker's frozen bowl. Churn according to the manufacturer's instructions, typically for 20-30 minutes, until the ice cream has a soft-serve consistency. The mixture will be soft at this stage.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Freeze to Firm</h3>
+        <p>Transfer the soft, churned ice cream to a freezer-safe container. Press plastic wrap directly onto the surface of the ice cream to prevent ice crystals from forming, then cover with a lid. Freeze for at least 4-6 hours, or until the ice cream is firm enough to scoop. Enjoy your homemade vanilla ice cream!</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

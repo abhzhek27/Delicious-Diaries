@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>chocolate cake</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      background-image: url('264pIkbEsTpFq.jpg');
+      filter: grayscale(50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      background-image: url(1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(75%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ffcc80;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">CHOCOLATE CAKE</div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>OVERVIEW</span></a>
+    <a href="#section2">02 <span>INGREDIENTS</span></a>
+    <a href="#section3">03 <span>BAKE & FINISH</span></a>
+  </div>  
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>A SLICE OF HEAVEN</h2>
+      <p>This chocolate cake is the perfect balance of rich cocoa flavor, moist crumb, and creamy frosting. Whether it’s for birthdays, celebrations, or sweet cravings — it’s always the right time for chocolate cake.</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>THE INGREDIENT</h2>
+      <p style="color: rgb(255, 255, 255);">
+         1½ cups all-purpose flour, 1½ cups sugar, ¾ cup unsweetened cocoa powder, 1½ tsp baking powder, 1½ tsp baking soda, 2 eggs, 1 cup milk, ½ cup vegetable oil, 2 tsp vanilla extract, 1 cup boiling water, and a pinch of salt.
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Baking Steps</h2>
+
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Preheat your oven to 180°C (350°F). Grease and line two 8-inch round cake pans.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>In a large bowl, mix flour, sugar, cocoa powder, baking powder, baking soda, and salt.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Add eggs, milk, oil, and vanilla to the dry ingredients. Beat until smooth using a whisk or electric mixer.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4</h3>
+        <p>Stir in boiling water gradually. The batter will be thin — this keeps the cake moist.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 5</h3>
+        <p>Pour batter evenly into prepared pans. Bake for 30–35 minutes or until a toothpick comes out clean. Cool before frosting.</p>
+      </div>
+
+      <div class="step">
+        <h3>Optional Frosting</h3>
+        <p>Top with chocolate ganache, buttercream, or whipped cream and decorate with sprinkles, fruit, or chocolate chips.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

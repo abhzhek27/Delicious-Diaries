@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beef Fry</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url(beeffry.jpg) no-repeat center center/cover;
+      filter: grayscale(50%) brightness(0.7);
+      z-index: -2;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      color: white;
+    }
+
+    .menu {
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 2;
+    }
+
+    .center-content h3 {
+      font-weight: 300;
+      font-size: 22px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .center-content h1 {
+      font-size: 70px;
+      letter-spacing: 12px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .center-content .btn {
+      padding: 14px 36px;
+      font-size: 14px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
+
+    .btn:hover {
+      background-color: black;
+      color: #fff;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <header>
+      <div class="menu"><a href="2nd.html.html" style="color: #fa0505; text-decoration: none;">☰ Menu</a></div>
+    </header>
+
+    <div class="center-content">
+      <h3>SPICE. SMOKE. TRADITION.</h3>
+      <h1>BEEF FRY</h1>
+      <a href="beeffry_detail.html" class="btn">Discover Now</a>
+    </div>
+
+    <div class="nav-dots">
+      <div class="active"></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+</body>
+</html>

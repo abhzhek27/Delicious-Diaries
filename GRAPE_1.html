@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grape Juice Tribute</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      background-image: url('juices.jpg');
+      filter: grayscale(50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      background-image: url('grape_prep.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(75%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #d1a9f2;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">GRAPE JUICE</div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>INTRO</span></a>
+    <a href="#section2">02 <span>INGREDIENTS REQUIRED</span></a>
+    <a href="#section3">03 <span>START JUICING</span></a>
+  </div>  
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>Sip the Sweetness of Nature</h2>
+      <p>Grape juice is a delicious and nutritious drink made from crushed and blended grapes. Known for its vibrant color and antioxidants, it's both refreshing and heart-healthy.</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>INGREDIENTS REQUIRED</h2>
+      <p style="color: rgb(255, 255, 255);">
+        Fresh grapes – 2 cups (seedless, black or green)<br>
+        Water – 1/2 cup (optional for blending)<br>
+        Sugar or honey – to taste (optional)<br>
+        Lemon juice – 1 tsp (optional for tang)<br>
+        Ice cubes – for serving<br>
+        Mint – for garnish (optional)
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Juicing Steps</h2>
+
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Rinse the grapes thoroughly and remove them from the stems.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Blend the grapes with optional water until smooth. Strain to remove pulp and skin.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Add lemon juice and sweetener if desired. Mix well.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4</h3>
+        <p>Serve chilled over ice, garnished with mint leaves. Enjoy your fresh grape juice!</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

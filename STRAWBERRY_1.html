@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Strawberry Ice Cream</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      letter-spacing: 8px;
+      z-index: 1000;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+    }
+
+    .section-numbers {
+      position: fixed;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .section-numbers a {
+      color: gray;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .section-numbers a span {
+      display: block;
+      font-size: 10px;
+      margin-top: 3px;
+    }
+
+    .section-numbers a:hover {
+      color: white;
+      border-left: 2px solid white;
+      padding-left: 10px;
+    }
+
+    .main-content h2 {
+      letter-spacing: 6px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    #section1 {
+      background-color: #000;
+    }
+
+    #section2 {
+      /* You might want to update the background image to a strawberry-related one */
+      background-image: url('ICE.webp'); /* Assuming you have a strawberry image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(30%);
+    }
+
+    #section3 {
+      background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
+      color: white;
+      /* You might want to update the background image to a strawberry-related one for the baking steps */
+      background-image: url('strawberry_prep.jpg'); /* Assuming you have another strawberry image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(50%);
+    }
+
+    .steps-container {
+      display: grid;
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-heading {
+      font-size: 28px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ff99aa; /* Keeping a similar pinkish tone for strawberry */
+    }
+
+    .step p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">STRAWBERRY</div>
+
+  <div class="menu-icon">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="section-numbers">
+    <a href="#section1" class="active">01 <span>INTRO</span></a>
+    <a href="#section2">02 <span>INGREDIENTS</span></a>
+    <a href="#section3">03 <span>MAKING STEPS</span></a>
+  </div>    
+
+  <section id="section1">
+    <div class="main-content">
+      <h2>Sweet, Creamy, and Bursting with Berry Flavor</h2>
+      <p>Strawberry ice cream is a classic frozen dessert, beloved for its vibrant color, refreshing taste, and delightful chunks of real strawberries. It's perfect for a warm day or any sweet craving!</p>
+    </div>
+  </section>
+
+  <section id="section2">
+    <div class="main-content">
+      <h2>INGREDIENTS REQUIRED</h2>
+      <p style="color: rgb(255, 255, 255);">
+        Fresh Strawberries – 2 cups (hulled and chopped)<br>
+        Granulated Sugar – ½ to ¾ cup (adjust to taste and strawberry sweetness)<br>
+        Heavy Cream (or Double Cream) – 1½ cups<br>
+        Whole Milk – ½ cup<br>
+        Vanilla Extract – 1 tsp<br>
+        Lemon Juice – 1 tbsp (optional, brightens strawberry flavor)<br>
+        Pinch of Salt<br>
+      </p>
+    </div>
+  </section>
+
+  <section id="section3">
+    <div class="steps-container">
+      <h2 class="section-heading">Making Steps</h2>
+
+      <div class="step">
+        <h3>Step 1: Prepare the Strawberries</h3>
+        <p>In a medium bowl, combine the chopped strawberries with about half of the granulated sugar. Let them sit for 15-30 minutes to macerate, releasing their juices. You can lightly mash them with a fork for a smoother texture, or leave them chunky.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Create the Ice Cream Base</h3>
+        <p>In a large bowl, whisk together the heavy cream, whole milk, remaining granulated sugar (start with less and add more to taste), vanilla extract, and a pinch of salt. If using, add the lemon juice here too. Whisk until the sugar is dissolved.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Combine and Chill</h3>
+        <p>Gently stir the macerated strawberries (including their juices) into the cream mixture. Cover the bowl and chill the entire mixture in the refrigerator for at least 2-4 hours, or preferably overnight. This is crucial for a good texture.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Churn and Freeze</h3>
+        <p>Pour the chilled strawberry mixture into your ice cream maker and churn according to the manufacturer's instructions (usually 20-30 minutes), until it reaches a soft-serve consistency. Transfer the churned ice cream to a freezer-safe container and freeze for at least 4-6 hours until firm. If you don't have an ice cream maker, you can use a no-churn method by whipping cold heavy cream to stiff peaks and folding it into a strawberry-sweetened condensed milk mixture, then freezing.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Enjoy!</h3>
+        <p>Scoop and enjoy your homemade strawberry ice cream! For best results, let it sit at room temperature for a few minutes before serving if it's very hard from the freezer.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
