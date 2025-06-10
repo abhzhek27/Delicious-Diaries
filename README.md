@@ -1,4 +1,3 @@
-Delicious Diaries:
 Welcome to Delicious Diaries, a website made for all food lovers!
 Here, you can explore different types of dishes from around the world.
 We share tasty recipes that are easy to follow and fun to make.
@@ -11,7 +10,9 @@ We made it using HTML, CSS, and a bit of JavaScript.
 It works on both computers and mobile phones.
 We designed it with love for everyone who enjoys food.
 Our goal is to make cooking fun and stress-free.
-We hope you try some recipes and enjoy them with your family and friends.
+You can come back anytime to try something new.
+We plan to keep adding more recipes in the future.
+Feel free to share your favorite dishes with us too!
 Thank you for visiting Delicious Diaries!
 Keep cooking and keep smiling 
 
