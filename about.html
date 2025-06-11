@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Delicious Diaries</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <section class="about-section" id="about">
+    <div class="about-container fade-in">
+      <div class="about-left">
+        <h1>ABOUT US</h1>
+        <p>
+          At Delicious Diaries, we're passionate about bringing authentic flavors to your table.
+          From cherished family recipes to global culinary inspirations, our journey is all about
+          helping you create unforgettable meals.
+        </p>
+        <div class="story-box">
+          <h4>OUR STORY</h4>
+          <p>
+            Born from a passion for flavor and tradition, Delicious Diaries began as a humble recipe
+            journal and has grown into a beloved destination for food lovers seeking authentic and
+            delightful culinary experiences.
+          </p>
+        </div>
+        <a href="index.html" class="home-button">← Delicious Diaries</a>
+      </div>
+
+      <div class="about-right">
+        <ul>
+            <li><i class="fas fa-leaf"></i> Fresh & Locally Sourced Ingredients</li>
+            <li><i class="fas fa-thumbs-up"></i> Your Satisfaction is Guaranteed</li>
+            <li><i class="fas fa-utensil-spoon"></i> Simple, Honest Recipes</li>
+            <li><i class="fas fa-star"></i> Trusted by Thousands of Foodies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<section class="inspire">
+  <h2>Ready to Cook Something Delicious?</h2>
+  <p>“People who love to eat are always the best people.” – Julia Child</p>
+  <a href="index.html#recipes" class="orange-btn">Explore Recipes</a>
+</section>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
