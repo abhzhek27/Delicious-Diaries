@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meet the Creators – Delicious Diaries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* BASE SETUP */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff8f2 25%, #fff3e6 75%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      color: #333;
+    }
+    a { text-decoration: none; }
+
+    /* SECTION STYLES */
+    .team-section {
+      width: 100%;
+      max-width: 1400px;
+    }
+    .team-section h2 {
+      font-size: 3rem;
+      color: #ff6b00;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* CARD STYLES */
+    .team-card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      width: 260px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      opacity: 0;
+      animation: fadeInUp 0.8s forwards;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .team-card:hover {
+      transform: translateY(-10px) rotateX(3deg) rotateY(3deg);
+      box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    }
+
+    .team-icon {
+      font-size: 4rem;
+      color: #ff6b00;
+      margin-bottom: 1rem;
+    }
+    .team-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .team-link a {
+      color: #fff;
+      background: #ff6b00;
+      padding: 0.8rem 1.5rem;
+      border-radius: 40px;
+      font-weight: 500;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(255, 107, 0, 0.2);
+    }
+    .team-link a:hover {
+      background: #e65a00;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 26px rgba(255,107,0,0.3);
+    }
+
+    /* JOIN SECTION */
+    .join-team {
+      margin: 4rem auto 0;
+      padding: 2.5rem 2rem;
+      max-width: 800px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      animation: fadeInUp 0.8s 0.4s forwards;
+      opacity: 0;
+    }
+    .join-team h3 {
+      font-size: 2.2rem;
+      color: #ff6b00;
+      margin-bottom: 1rem;
+    }
+    .join-team p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1.8rem;
+      line-height: 1.5;
+    }
+    .join-team .portfolio-button {
+      background: #ff6b00;
+      padding: 1rem 2rem;
+      color: #fff;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: 500;
+      box-shadow: 0 8px 20px rgba(255,107,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+    .portfolio-button:hover {
+      background: #e65a00;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 26px rgba(255,107,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="team-section">
+    <h2>Meet the Creators</h2>
+    <div class="team-grid">
+
+      <div class="team-card" style="animation-delay: 0.1s;">
+        <div class="team-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="team-name">ABHISHEK J</div>
+        <div class="team-link">
+          <a href="https://abhzhek27.github.io/PROJECT-PHASE-1/" target="_blank">Explore Profile</a>
+        </div>
+      </div>
+
+      <div class="team-card" style="animation-delay: 0.2s;">
+        <div class="team-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="team-name">MADHAV K N</div>
+        <div class="team-link">
+          <a href="https://madhav34k.github.io/my-portfolio/" target="_blank">Explore Profile</a>
+        </div>
+      </div>
+
+      <div class="team-card" style="animation-delay: 0.3s;">
+        <div class="team-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="team-name">SIDHARTH SUNIL</div>
+        <div class="team-link">
+          <a href="https://priyaverma.design" target="_blank">Explore Profile</a>
+        </div>
+      </div>
+
+      <div class="team-card" style="animation-delay: 0.4s;">
+        <div class="team-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="team-name">ABHINAV KANNAN</div>
+        <div class="team-link">
+          <a href="https://abhinavkannan05.github.io/portfolio/index.html" target="_blank">Explore Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="join-team">
+    <h3>Want to Join Our Creative Team?</h3>
+    <p>We're always open to working with passionate developers and collaborators.</p>
+    <a href="https://mail.google.com/mail/?view=cm&to=deliciousdiaries@gmail.com" 
+       target="_blank" class="portfolio-button">Connect Us!</a>
+  </section>
+
+</body>
+</html>
+
+
+
