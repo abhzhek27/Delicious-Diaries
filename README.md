@@ -16,3 +16,9 @@ Feel free to share your favorite dishes with us too!
 Thank you for visiting Delicious Diaries!
 Keep cooking and keep smiling 
 
+TEAM MEMBERS & ROLES:
+ABHISHEK J -Designed the Main Page & Recipe Cards
+MADHAV K N -Designed recipe steps inside  View recipes
+SIDDHARTH SUNIL -Designed Welcome Video page & navigation bars
+ABHINAV KANNAN-Designed recipe steps inside View recipes
+
