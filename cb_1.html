@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Tribute Layout</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -115,33 +116,10 @@
     #section3 {
       background: linear-gradient(to bottom, #0d0d0d, #1c1c1c);
       color: white;
-      background-image: url('1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg');
+      background-image: url(1000_F_551072558_rENux9fqlec5GPBJSaToT69xjcYiGxje.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       filter: grayscale(75%);
-    }
-
-    #section4 {
-      background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    #section4 h2 {
-      font-size: 28px;
-      letter-spacing: 4px;
-      margin-bottom: 20px;
-      color: #ffcc80;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    #section4 p {
-      font-size: 16px;
-      color: #e0e0e0;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.7;
     }
 
     .steps-container {
@@ -184,6 +162,22 @@
       color: #e0e0e0;
       line-height: 1.6;
     }
+
+    .back-to-menu {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .back-to-menu:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -191,8 +185,9 @@
   <div class="logo">BIRYANI</div>
 
   <div class="menu-icon">
+    <a href="2nd.html.html"></a>
     <div></div>
-    <div></div>
+    <div><a href="2nd.html.html"></a></div>
     <div></div>
   </div>
 
@@ -200,7 +195,6 @@
     <a href="#section1" class="active">01 <span>INTRO</span></a>
     <a href="#section2">02 <span>SPICES REQUIRED</span></a>
     <a href="#section3">03 <span>START COOKING</span></a>
-    <a href="#section4">04 <span>AI FOR YOU</span></a>
   </div>  
 
   <section id="section1">
@@ -242,12 +236,8 @@
         <h3>Step 4</h3>
         <p>Cover the pot with a tight lid or dough seal. Cook on a low flame (dum) for 25–30 minutes. Let it rest for 10 minutes before opening. Serve hot with raita or salan.</p>
       </div>
-    </div>
-  </section>
 
-  <section id="section4">
-    <div class="">
-      <a href="f.html" style="text-decoration: none; font-size: larger;color: antiquewhite;">Refer With Gemini</a>
+      <a href="2nd.html.html" class="back-to-menu">← Back to Menu</a>
     </div>
   </section>
 
