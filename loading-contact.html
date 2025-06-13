@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ff6b00; /* Exact orange background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+    }
+
+    .logo-img {
+      width: 700px;  /* Increased size for better visibility */
+      max-width: 90vw;  /* Responsive on smaller screens */
+      height: auto;
+    }
+
+    .loading-text {
+      margin-top: 30px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      .logo-img {
+        width: 280px;
+      }
+
+      .loading-text {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <!-- Redirect after 3 seconds -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "contact.html";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <img src="dd.jpg" alt="Delicious Diaries Logo" class="logo-img" />
+</body>
+</html>
+
+
+
